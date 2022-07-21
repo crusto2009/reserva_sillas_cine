@@ -1,0 +1,26 @@
+[
+    {
+        "Bienvenida": [
+            {
+                "id": 1,
+                "titulo": "SLIDER 1",
+                "texto": "Eum nemo voluptas nemo ratione. Et quam est officia dolorem quos.Numquam aut eum deleniti aut quam dolorem. Ratione distinctio dolorem id quia cupiditate eos.Eum nemo voluptas nemo ratione. Et quam est officia dolorem quos.Numquam aut eum deleniti aut quam dolorem. Ratione distinctio dolorem id quia cupiditate eos."
+            },
+            {
+                "id": 2,
+                "titulo": "SLIDER 2",
+                "texto": "Eum nemo voluptas nemo ratione. Et quam est officia dolorem quos.Numquam aut eum deleniti aut quam dolorem. Ratione distinctio dolorem id quia cupiditate eos."
+            },
+            {
+                "id": 3,
+                "titulo": "SLIDER 3",
+                "texto": "Eum nemo voluptas nemo ratione. Et quam est officia dolorem quos.Numquam aut eum deleniti aut quam dolorem. Ratione distinctio dolorem id quia cupiditate eos."
+            },
+            {
+                "id": 4,
+                "titulo": "SLIDER 4",
+                "texto": "Eum nemo voluptas nemo ratione. Et quam est officia dolorem quos.Numquam aut eum deleniti aut quam dolorem. Ratione distinctio dolorem id quia cupiditate eos."
+            }
+        ]
+    }
+]

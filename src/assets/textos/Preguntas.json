@@ -1,0 +1,408 @@
+{
+    "Preguntas": [
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLas pausas activas nos ayudan a prevenir la aparición u ocurrencia de:",
+            "id": 1,
+            "opciones": [
+                "Accidentes de trabajo",
+                "Enfermedades de origen laboral",
+                "Enfermedades de origen común"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLas enfermedades laborales musculo-esqueléticas pueden aparecer en los trabajadores debido a:",
+            "id": 2,
+            "opciones": [
+                "Las actividades repetitivas y las posturas prolongadas",
+                "La exposición al ruido en el trabajo",
+                "Los accidentes de trabajo recurrentes"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLas pausas activas sirven para:",
+            "id": 3,
+            "opciones": [
+                "Disminuir el estrés",
+                "Prevenir la aparición de enfermedades laborales",
+                "A y B son correctas"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLas pausas activas, por regla general, se deben realizar cada: ",
+            "id": 4,
+            "opciones": [
+                "Dos horas",
+                "Quince minutos",
+                "Solo una vez durante la jornada"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t¿Por qué es necesaria la realización de las pausas activas?: ",
+            "id": 5,
+            "opciones": [
+                "Porque permiten disminuir tiempo laboral",
+                "Porque mejoran el desempeño laboral",
+                "Porque son obligatorias dentro de la organización"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLa duración de las pausas activas debe ser como mínimo de: ",
+            "id": 6,
+            "opciones": [
+                "10 minutos",
+                "Una hora",
+                "Cinco minutos"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t¿Los ejercicios de estiramientos permiten a los trabajadores mejorar su capacidad para?: ",
+            "id": 7,
+            "opciones": [
+                "Mantener una buena salud cardiovascular",
+                "Preparar los músculos para un mayor esfuerzo",
+                "Fortalecer el sistema nervioso"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"VerdaderoFalso",
+            "pregunta": "\tLos estiramientos consisten en una serie de ejercicios suaves y mantenidos que ayudan a aumentar el rango de movimiento articular: ",
+            "id": 8,
+            "opciones": [
+                "Falso",
+                "Verdadero"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLa duración de cada ejercicio de estiramiento debería ser de:",
+            "id": 9,
+            "opciones": [
+                "Un minuto",
+                "Cinco segundos",
+                "Entre 10 y 20 segundos"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tEn las pausas activas debemos realizar diferentes ejercicios, entre estos están: ",
+            "id": 10,
+            "opciones": [
+                "De coordinación, de estiramientos y cardiovasculares",
+                "De levantamiento de peso y estiramientos únicamente",
+                "De digitación, cardiovasculares y de sincronización"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tEn las pausas activas debemos realizar diferentes ejercicios, entre estos están: ",
+            "id": 11,
+            "opciones": [
+                "Mejorar la fuerza muscular y la capacidad física al mismo tiempo.",
+                "Realizar satisfactoriamente una tarea con dos o más partes del cuerpo",
+                "Mejorar la resistencia"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tUno de los objetivos al realizar ejercicios de coordinación es: ",
+            "id": 12,
+            "opciones": [
+                "Prevenir caídas",
+                "Fortalecer los músculos de los miembros superiores",
+                "Mejorar la habilidad para escribir en el teclado"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tNo realizar pausas activas cuando trabajamos frente al computador nos puede llevar a: ",
+            "id": 13,
+            "opciones": [
+                "Caernos de la silla en la que trabajamos",
+                "Exponernos de forma excesiva a peligros físicos",
+                "Generar fatiga visual"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLos trastornos de trauma acumulativo se presentan por: ",
+            "id": 14,
+            "opciones": [
+                "Trabajar frente al computador únicamente",
+                "Movimientos repetitivos en cualquier parte del cuerpo",
+                "Levantar cargas pesadas una vez al día"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"FalsoVerdadero",
+            "pregunta": "\tAl realizar la pausa activa lo que logro es romper la rutina del trabajo, reactivar la energía y mi estado de ánimo durante la jornada laboral para estar más atento y alerta en el trabajo.",
+            "id": 15,
+            "opciones": [
+                "Falso",
+                "Verdadero"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"FalsoVerdadero",
+            "pregunta": "\tLos beneficios de las pausas activas son individuales únicamente, ya que solo permiten mejorar mis capacidades personales.",
+            "id": 16,
+            "opciones": [
+                "Falso",
+                "Verdadero"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tAdemás de los beneficios durante mis actividades laborales, ¿las pausas activas me permiten?.",
+            "id": 17,
+            "opciones": [
+                "Generar conciencia de la salud física y mental",
+                "Tener una mejor relación con mi familia",
+                "Disminuir de peso progresivamente"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Para mejorar la apropiación de las pausas activas en las organizaciones, todas las empresas deberían.",
+            "id": 18,
+            "opciones": [
+                "Imponer como obligatorias la ejecución de las pausas activas",
+                "Incluirlas en el reglamento interno de trabajo",
+                "Designar líderes e incentivar a todos los trabajadores para su realización"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Uno de los objetivos de la ergonomía es:",
+            "id": 19,
+            "opciones": [
+                "Adaptar el trabajo a las capacidades y posibilidades del ser humano",
+                "Prevenir la ocurrencia de accidentes de trabajo de trabajo únicamente",
+                "Mejorar las capacidades psicosociales del grupo de trabajo"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLos ejercicios de respiración y relajación dentro de las pausas activas nos permiten:",
+            "id": 20,
+            "opciones": [
+                "Ingresar suficiente aire a los pulmones",
+                "Generar un estado de distensión muscular y psíquica",
+                "Mejorar la postura en el lugar de trabajo"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"FalsoVerdadero",
+            "pregunta": "\tPara lograr un buen estado de relajación se debe controlar la respiración haciendo que esta sea lenta, rítmica, fluida y diafragmática, lo cual mejorará la restauración y alimentación orgánica, acelerando la conciencia corporal armónica:",
+            "id": 21,
+            "opciones": [
+                "Falso",
+                "Verdadero"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\tLos estilos de vida saludable hacen parte de la prevención de las enfermedades de origen laboral por que incluyen:",
+            "id": 22,
+            "opciones": [
+                "Realizar una actividad física regular",
+                "Consumir alimentos saludables",
+                "Todas las anteriores"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Las pausas activas y la prevención de las enfermedades laboral de origen ergonómico deben complementarse con:",
+            "id": 23,
+            "opciones": [
+                "El autocuidado",
+                "La batería de riesgo psicosocial",
+                "Los protocolos de bioseguridad"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Cuando hablamos de postura bípeda, se trata de:",
+            "id": 24,
+            "opciones": [
+                "Permanecer sentados correctamente en ambos glúteos",
+                "Estar en posición erecta sobre dos pies",
+                "Utilizar ambas manos para ejecutar actividades laborales"
+            ],
+            "correcta": "b",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Los ejercicios de movilidad articular sirven para:",
+            "id": 25,
+            "opciones": [
+                "Preparar las articulaciones para que no sufran lesiones",
+                "Ampliar el rango de movilidad articular",
+                "Ninguna de las anteriores"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Los ejercicios para la prevención de la fatiga visual deben realizarse:",
+            "id": 26,
+            "opciones": [
+                "Únicamente cuando se trabaja frente al computador",
+                "En toda actividad que implique esfuerzo visual (ej, lectura)",
+                "No es necesario realizar este tipo de ejercicios"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t En la legislación colombiana la carga máxima que un trabajador podré levantar es de:",
+            "id": 27,
+            "opciones": [
+                "50 kilogramos",
+                "30 kilogramos",
+                "25 kilogramos"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"FalsoVerdadero",
+            "pregunta": "\t Cuando un trabajador se dedique constantemente al levantamiento y transporte de cargas se le concederán espacios constantes de pausa libres de esfuerzo físico:",
+            "id": 28,
+            "opciones": [
+                "Falso",
+                "Verdadero"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Existe una restricción para el levantamiento de cargas a determinadas personas, estas son:",
+            "id": 29,
+            "opciones": [
+                "Quienes sufran de hipertensión arterial",
+                "Mujeres embarazadas",
+                "Quienes sufran o hayan sufrido lesiones articulares",
+                "Todas las anteriores"
+            ],
+            "correcta": "d",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t La mejor forma de manipular cargas es",
+            "id": 30,
+            "opciones": [
+                "Tomarlas firmemente, acercarlas lo más posible al cuerpo y hacer fuerza con las piernas",
+                "Siempre entre dos personas, independiente del peso que tengan",
+                "Utilizando siempre guantes y faja"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t Al almacenar elementos y con el fin de evitar accidentes o cargas excesivas sobre el cuerpo, se debe:",
+            "id": 31,
+            "opciones": [
+                "Almacenar siempre a nivel del suelo",
+                "Almacenar todo en estibas para movilizar a través de gatos hidráulicos",
+                "Los arrumes no deben superar la altura de la cabeza, si es necesario, se utilizan escaleras."
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t El peso máximo que las mujeres podrán levantar, de acuerdo a la Resolución 2400 de 1979 es de:",
+            "id": 32,
+            "opciones": [
+                "12,5 kilogramos",
+                "25 kilogramos",
+                "30 kilogramos"
+            ],
+            "correcta": "a",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "\t La inactividad física nos puede conllevar a:",
+            "id": 33,
+            "opciones": [
+                "Obesidad",
+                "Enfermedades crónicas y metabólicas",
+                "Todas las anteriores"
+            ],
+            "correcta": "c",
+            "cargado":false
+        },
+        {
+            "tipo":"SeleccionMultiple",
+            "pregunta": "3\t Uno de los beneficios que obtienen los empleadores al implementar programas de pausas activas en las empresas es:",
+            "id": 34,
+            "opciones": [
+                "Mejora en la productividad de la empresa",
+                "No obtiene beneficios, ya que disminuye el tiempo que laboran los trabajadores",
+                "Disminución en el pago de la ARL"
+            ],
+            "correcta": "a",
+            "cargado":false
+        }
+    ]
+}
