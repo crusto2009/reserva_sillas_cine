@@ -1,161 +1,40 @@
 <script setup>
-import { ref, reactive, onMounted, onBeforeMount, computed } from 'vue'
-import { useFetch } from '../logica/fetch.js'
+import { ref, reactive, onBeforeMount, computed } from 'vue'
 
 const letras = ref(['A', 'B', 'C', 'D', 'E', 'F'])
 
-let sillasReferencia = ref([[
-  { id: 1, estado: true, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: false, numero: 17 }
-],
-[
-  { id: 1, estado: false, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: true, numero: 17 }
-],
-[
-  { id: 1, estado: false, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: true, numero: 17 }
-],
-[
-  { id: 1, estado: false, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: true, numero: 17 }
-],
-[
-  { id: 1, estado: false, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: true, numero: 17 }
-],
-[
-  { id: 1, estado: false, numero: 1 },
-  { id: 2, estado: false, numero: 2 },
-  { id: 3, estado: false, numero: 3 },
-  { id: 4, estado: false, numero: 4 },
-  { id: 5, estado: false, numero: 5 },
-  { id: 6, estado: false, numero: 6 },
-  { id: 7, estado: false, numero: 7 },
-  { id: 8, estado: false, numero: 8 },
-  { id: 9, estado: false, numero: 9 },
-  { id: 10, estado: false, numero: 10 },
-  { id: 11, estado: false, numero: 11 },
-  { id: 12, estado: false, numero: 12 },
-  { id: 13, estado: false, numero: 13 },
-  { id: 14, estado: false, numero: 14 },
-  { id: 15, estado: false, numero: 15 },
-  { id: 16, estado: false, numero: 16 },
-  { id: 17, estado: true, numero: 17 }
-]
-])
-const sillas = reactive(sillasReferencia.value)
+let sillasReferencia = ref(null)
+const loading = ref(false)
+const url = ref('https://reservascine-default-rtdb.firebaseio.com/sillas.json')
 
 
 const stylesSillas = ref({
   display: "grid",
-  gridTemplateColumns: `repeat(${sillas[0].length}, 1fr)`,
+  gridTemplateColumns: `repeat(auto-fill,minmax(4em,1fr))`,
   gridTemplateRows: `repeat(${2}, 1fr)`,
   gridGap: "1px"
 })
 
-const limitAge = ref(18)
-const age = ref('')
-const isVertical = ref(true)
-
-onMounted(() => {
-
-
-
-
-
-
-
-})
 
 onBeforeMount(() => {
-  const { data, error } = useFetch('https://reservascine-default-rtdb.firebaseio.com/sillas/-N7XkQm5aq1Q8bUGawEX.json')
-  console.log(data)
+  fetch(url.value)
+    .then((res) => res.json())
+    .then((json) => {
+      sillasReferencia.value = json
 
-  sillasReferencia.value = data
+    })
+    .catch((err) => (err))
+
+  /*  = data */
+
+  setInterval(() => {
+    if (sillasReferencia.value != null) {
+      loading.value = true
+      /* stylesSillas.gridTemplateColumns = `repeat(${sillasReferencia!= null > 0 ? sillasReferencia[0].length : 'none'}, 1fr)` */
+    }
+  }, 1500);
 
 
-  /*  if (window.localStorage.getItem('sillas')) {
-     sillasReferencia = JSON.parse(window.localStorage.getItem('sillas'))
- 
-   } else {
-     window.localStorage.setItem('sillas', JSON.stringify(sillas));
-   } */
 })
 
 
@@ -168,29 +47,37 @@ const sillasOcupadas = computed(() => {
 
   let contadorsillasLibres = 0
 
-  sillas.map((sillaFiltro, index) => {
-    sillaFiltro.map((silla) => {
+  if (sillasReferencia.value != null) {
+    Object.values(sillasReferencia.value).map((sillaFiltro) => {
+      console.log(sillaFiltro)
+      Object.values(sillaFiltro).map((silla) => {
 
-      if (silla.estado) {
-        contadorsillasLibres++
-      }
+        if (silla.estado) {
+          contadorsillasLibres++
+        }
+      })
     })
-  })
+  }
+
+
   return contadorsillasLibres
 })
 
 const sillasLibres = computed(() => {
 
   let contadorsillasLibres = 0
+  if (sillasReferencia.value != null) {
 
-  sillas.map((sillaFiltro, index) => {
-    sillaFiltro.map((silla) => {
+    Object.values(sillasReferencia.value).map((sillaFiltro) => {
 
-      if (!silla.estado) {
-        contadorsillasLibres++
-      }
+      Object.values(sillaFiltro).map((silla) => {
+        if (!silla.estado) {
+          contadorsillasLibres++
+        }
+      })
     })
-  })
+  }
+
   return contadorsillasLibres
 })
 
@@ -198,12 +85,17 @@ const sillasLibres = computed(() => {
 
 
 const changeStateSilla = (posiciones) => {
-  console.log(posiciones)
   const { indexFila, indexColumna } = posiciones
-  console.log(sillas[indexFila][indexColumna].estado)
-  let estado = sillas[indexFila][indexColumna].estado
-  sillas[indexFila][indexColumna].estado = !estado
-  window.localStorage.setItem('sillas', JSON.stringify(sillas));
+  let estado = sillasReferencia.value[indexFila][indexColumna].estado
+  sillasReferencia.value[indexFila][indexColumna].estado = !estado
+  console.log(sillasReferencia.value[indexFila][indexColumna].id)
+  fetch(url.value, {
+  method: "PUT",
+  body: JSON.stringify(sillasReferencia.value),
+  headers: {"Content-type": "application/json; charset=UTF-8"}
+})
+    .then((res) => res.json())
+    .catch((err) => (err))
 }
 
 
@@ -213,7 +105,7 @@ const changeStateSilla = (posiciones) => {
   <div class="container-screen-movie">
     <div class="screen-pantalla-movie">
       <h3>PANTALLA</h3>
-      <div>
+      <div v-if="loading">
         <div>
           <strong>Sillas libres:</strong> {{ sillasLibres }}
         </div>
@@ -222,26 +114,27 @@ const changeStateSilla = (posiciones) => {
         </div>
       </div>
     </div>
-    <div class="numeracion">
+    <div class="numeracion" v-if="loading">
       <div class="numeracion-letras">
         <div v-for="letra in letras" :key="letra">
           {{ letra }}
         </div>
       </div>
+
       <div class="container-sillas">
-        <div :style="stylesSillas" v-for="(sillaFila, indexFila) in sillas.length" :key="sillaFila[indexFila]">
-          <div class="sillas-movie" v-for="(sillaColumna, indexColumna) in sillas[0].length"
+        <div :style="stylesSillas" v-for="(sillaFila, indexFila) in sillasReferencia.length"
+          :key="sillaFila[indexFila]">
+          <div class="sillas-movie" v-for="(sillaColumna, indexColumna) in sillasReferencia[0].length"
             :key="sillaColumna[indexColumna]" @click="changeStateSilla({ indexFila, indexColumna })"
-            :class="{ 'ocupado': sillas[indexFila][indexColumna].estado }">
+            :class="{ 'ocupado': sillasReferencia[indexFila][indexColumna].estado }">
             {{ sillaColumna }}
-            <!--  {{ sillas[indexFila]}} -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div>
-
+    <div class="loading" v-else>
+      <h1>Cargando...</h1>
+    </div>
   </div>
 </template>
 
@@ -269,7 +162,8 @@ const changeStateSilla = (posiciones) => {
   border: 2px solid lime;
 }
 
-.container-sillas {
+.container-sillas,
+.loading {
   width: 79vw;
   height: 50vh;
   border: 2px solid lime;
@@ -289,7 +183,7 @@ const changeStateSilla = (posiciones) => {
   align-content: center;
   grid-gap: 31px;
   padding-top: 70px;
-  padding-right:12px
+  padding-right: 12px
 }
 
 .sillas-movie {
